@@ -190,7 +190,7 @@ static NSArray * EditableTextInputsInView(UIView *view)
         adjacentResponder = [self.responders objectAtIndex:adjacentResponderIndex];
 
     // Resign the previous responder before selecting the next one, so the UIKeyboard events could be notified properly.
-    [firstResponder resignFirstResponder];
+    //[firstResponder resignFirstResponder];
 
     [adjacentResponder becomeFirstResponder];
 }
